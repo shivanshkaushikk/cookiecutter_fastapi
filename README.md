@@ -11,6 +11,5 @@
 > 8. docker-compose setup and docker file setup
 
 ## Usage
-1. clone this template repository, or simply call cookiecutter <<git https URL for template project>>
-2. Call `cookiecutter <<location of this template director>>
-3. provide the values for the prompts
+1. Execute `cookiecutter https://github.com/usriva2405/cookiecutter_fastapi.git`
+2. provide the values for the prompts
