@@ -1,0 +1,21 @@
+FROM python:3.8-slim
+# RUN apt-get update
+
+# set the working directory in the container
+WORKDIR /
+
+# copy the dependencies file to the working directory
+COPY requirements.txt .
+
+# upgrade pip and install dependencies
+RUN pip install --upgrade pip
+RUN pip3 install --upgrade pip
+RUN pip3 install -r requirements.txt
+
+# copy the content of the local src directory to the working directory
+COPY . .
+
+# command to run on container start
+# CMD ["main.py"]
+# ENTRYPOINT ["python3"]
+CMD [ "python3", "settlement_download_from_hpy.py"]

@@ -1,0 +1,21 @@
+appName: {{cookiecutter.project_name}}
+logLevel: WARN
+
+properties:
+  namespace:
+    dns: http://127.0.0.1:5000/
+  cache:
+    redis_url: $REDIS_URL|redis://127.0.0.1:6379
+    redis_host: $REDIS_HOST|127.0.0.1
+    redis_user: $REDIS_USER|""
+    redis_port: $REDIS_PORT|6379
+    redis_password: $REDIS_PASSWORD|""
+    ttl: 180
+    max_size: 10000
+
+  database:
+    host: $DB_HOST|localhost
+    port: $DB_PORT|3306
+    user: $DB_USER|root
+    password: $DB_PASSWORD|password
+    schema: $DB_SCHEMA|ip_payment

@@ -1,0 +1,6 @@
+{
+	"directory_name": "myproject",
+	"project_name": "myproject",
+	"project_server_port": "5002",
+	"docker_image_url": "reg.qpayi.com:5000/indipaisa/myproject:master"
+}

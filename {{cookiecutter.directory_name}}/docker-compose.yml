@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  {{cookiecutter.project_name}}:
+    image: {{cookiecutter.docker_image_url}}
+    build:
+      context: './'
+      dockerfile: Dockerfile.{{cookiecutter.project_name}}

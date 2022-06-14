@@ -1,0 +1,8 @@
+build:{{cookiecutter.project_name}}:
+  stage: build
+  script:
+    - docker-compose build
+    - docker push {{cookiecutter.docker_image_url}}
+  only:
+    - release
+    - master
